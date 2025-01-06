@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <div class="navlist">
+            <ul>Home</ul>
+            <ul>Phone</ul>
+            <ul>Accessories</ul>
+            <ul>Cart</ul>
+        </div>
+        <div class="info">
+            <div class="overlay">
+
+            </div>
+            <div class="phone">
+                <img src="mobile.png" class="mobile" alt="">
+            </div>
+            <div class="circle">
+                <div class="feature one">
+                    <img src="battery.png" alt="">
+                    <div>
+                        <h1 class="h1">Battery Life</h1>
+                        <p  class="h1">5000mAh,720hrs Standby</p>
+                    </div>
+                </div>
+                <div class="feature two">
+                    <img src="processor.png" alt="">
+                    <div >
+                        <h1 class="h2">Processor</h1>
+                        <p class="h2">SnapDragon AmG4056</p>
+                    </div>
+                </div>
+                <div class="feature three">
+                    <img src="display.png" alt="">
+                    <div class="h3">
+                        <h1>Display</h1>
+                        <p>Amoled 14.5inch</p>
+                    </div>
+                </div>
+                <div class="feature four">
+                    <img src="camera.png" alt="">
+                    <div class="h4">
+                        <h1>Camera</h1>
+                        <p>50Px DualCam</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <img src="arrow.png" alt="" id="Upbtn">
+            <h3>Feature</h3>
+            <img src="arrow.png" alt="" id="downbtn">
+
+        </div>
+    </div>
+
+
+    <script>
+        let up = document.getElementById("Upbtn");
+        let down = document.getElementById("downbtn")
+        const circle=document.querySelector(".circle");
+
+        let rotateVal=circle.style.transform;
+        let rotatesum;
+        up.addEventListener('click',()=>{
+            rotatesum=rotateVal + "rotate(-90deg)";
+            circle.style.transform=rotatesum;
+            rotateVal=rotatesum;
+
+        })
+        down.addEventListener('click',()=>{
+            rotatesum=rotateVal + "rotate(90deg)";
+            circle.style.transform=rotatesum;
+            rotateVal=rotatesum;
+
+        })
+
+
+
+    </script>
+</body>
+
+</html>

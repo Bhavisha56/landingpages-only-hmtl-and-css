@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #415a77;
+    color: white;
+}
+.navbar{
+    width: 100%;
+    height: 50px;
+    padding: 3%;
+    display: grid;
+    grid-template-columns:0.1fr 9fr 1fr;
+    column-gap: 3%;
+}
+#icon{
+    font-size: 2rem;
+}
+.navList{
+    display: flex;
+    gap: 2%;
+}
+.navList ul:hover{
+    color: rgb(22, 193, 193);
+    cursor: pointer;
+}
+#btn{
+    width: 11vh;
+    height: 5vh;
+    padding: 5px;
+    border-radius: 22px;
+    background-color: #415a77;
+    color: white;
+    border: 1px solid white;
+}
+#btn:hover {
+    background-color: #1b263b; /* Darker shade for hover */
+    cursor: pointer; /* Change cursor to pointer */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+#btn:active {
+    background-color: #0d1b2a; /* Even darker shade for active state */
+    transform: scale(0.98); /* Slightly shrink the button */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow for pressed effect */
+}
+.center{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 3%;
+}
+.heading{
+    margin-bottom: 5%;
+}
+.learnMore{
+    padding: 3%;
+}
+.learnMore.fa-play{
+  
+}
+.center-container{
+    padding: 20%;
+}
+.centerimg img{
+    width: 90%;
+    height: 80%;
+    margin-top: 10%;
+    background: none;
+ border-radius: 2px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 2%;
+    column-gap: 64%;
+}
+.leftpart{
+    padding:2%;
+    background: linear-gradient(to right, #ab1ead, #1051ca);
+    color: white;
+    width: 30rem;
+    height: 10rem;
+    display: flex;
+    gap:20%;
+}

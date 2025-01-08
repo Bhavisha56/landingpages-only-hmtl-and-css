@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.mainbg{
+    height: 100vh;
+    width: 100%;
+    background-image: url(bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 1.4fr 0.2fr;
+    padding: 3%;
+}
+.navlist {
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    color: white;
+    gap: 50px;
+}
+.navlist ul:hover{
+    color: grey;
+    cursor: pointer;
+}
+.logo{
+    margin-left: 7%;
+}
+.signin button{
+    width: 6rem;
+    height: 2rem;
+    border-radius: 20px;
+    background: none;
+    color: #fff;
+    border: 1px solid white;
+}
+.signin button:hover{
+    background-color: grey;
+}
+.center{
+    padding: 6%;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr 1fr;
+}
+.icons ul{
+    color: #fff;
+    margin: 2rem;
+}
+.lines h1{
+    font-size: 1rem;
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* .lines2 p{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 900;
+} */
+ #cold{
+    font-size: 5rem;
+    color: #fff;
+    font-weight: 900;
+ }
+ #boost{
+    color: #fff;
+    font-weight: 400;
+    margin-top: 1rem;
+ }
+.lines3{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 2rem;
+    color: white;
+}
+.lines3 button{
+    width: 90%;
+    height: 2rem;
+    border-radius: 20px;
+    background-color: chocolate;
+}
+
+.coffee img{
+  width: 20rem;
+  height: 20rem;
+}

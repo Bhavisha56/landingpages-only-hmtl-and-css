@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Rubik", serif;
+    font-optical-sizing: auto;
+}
+
+.mainbox {
+    background-image: url(pexels-muffin-2468773.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    opacity: rgba(0, 0, 0, 0.767);
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 5fr 8fr 2fr;
+    color: white;
+    padding: 2%;
+}
+
+.navlist {
+    display: flex;
+    gap: 20px;
+}
+.Register button{
+    width: 4.5rem;
+    height: 2rem;
+    border-radius: 20px;
+    /* background-color: transparent; */
+    /* color: white; */
+    cursor: pointer;
+}
+.Register button:hover{
+    background-color: grey;
+}
+.center{
+    text-align: center;
+    margin-top: 10%;
+}
+.center h1{
+    font-size: 1rem;
+    color: white;
+}
+.center p{
+    font-size: 4rem;
+    color: white;
+    font-weight: 400;
+}
+.center button{
+    margin-top: 3%;
+    width: 10rem;
+    height: 2rem;
+    background-color: rgb(147, 39, 39);
+    color: white;
+    border-radius:20px;
+}
+.center button:hover{
+    cursor: pointer;
+    background-color: brown;
+}
